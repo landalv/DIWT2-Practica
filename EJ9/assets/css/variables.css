@@ -1,0 +1,12 @@
+:root {
+    /*PALETA DE COLORES*/
+    --color-primary: rgb(21, 115, 71);
+    --color-primary-oscuro: rgba(0, 0, 0, 0.25);
+    --color-secondary: #fff;
+    --color-tertiary: #404040;
+    --color-spacebar: #808080;
+    --color-background: lightgray;
+    --color-bg-card: #404040a9;
+    /*FONDO DE PANTALLA CON EFECTO OSCURECIDO*/
+    --background: linear-gradient(var(--color-primary-oscuro), var(--color-background)), url(../img/programar.jpg);
+}
