@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8"><!--Especificamos juego de caracteres-->
+  <!--Titulo-->
+  <title>Ej7 - Carlos Landa Vázquez</title>
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="./assets/img/dark.ico">
+  <!--Boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Estilos CSS-->
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css"><!--estilos generales para estructura HTML5-->
+  <link rel="stylesheet" href="./assets/css/fx.css">
+  <!-- JQUERRY -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-dark">
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top z-3">
+    <a href="#" class="navbar-brand mx-2 mb-0 h1">
+      <img src="./assets/img/logo/logo-dark.png" class="d-inline-block align-top" alt="">
+    </a>
+    <button type="button" class="navbar-toggler mx-1 h-100" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasExample" aria-controls="#offcanvasExample" style="border: none;">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end mx-1">
+      <ul class="navbar-nav ml-auto align-items-center align-content-between">
+        <li class="navbar-item mx-2"><a href="#" class="navbar-link text-uppercase text-white">Home</a></li>
+        <li class="navbar-item mx-2"><a href="#" class="navbar-link text-uppercase text-white">Features</a></li>
+        <li class="navbar-item mx-2"><a href="#" class="navbar-link text-uppercase text-white">Portfolio</a></li>
+        <li class="navbar-item mx-2"><a href="#" class="navbar-link text-uppercase text-white">Resume</a></li>
+        <li class="navbar-item mx-2"><a href="#" class="navbar-link text-uppercase text-white">Clients</a></li>
+        <li class="navbar-item mx-2"><a href="#" class="navbar-link text-uppercase text-white">Pricing</a></li>
+        <li class="navbar-item mx-2"><a href="#" class="navbar-link text-uppercase text-white">Blog</a></li>
+        <li class="navbar-item mx-2"><a href="#" class="navbar-link text-uppercase text-white">Contact</a></li>
+        <li class="navbar-item mx-3"><button type="button" class="btn btn-dark custom-shadow"><a href="#"
+              class="navbar-link text-uppercase">Buy now</a></button></li>
+      </ul>
+    </div>
+  </nav>
+  <!--CANVAS MENU RESPONSIVE-->
+  <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <a href="#" class="navbar-brand mx-2 mb-0 h1">
+        <img src="./assets/img/logo/logo-dark-custom.png" class="d-inline-block align-top" alt="">
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body container">
+      <div class="row my-1" style="font: bold; color: gray;">
+        <p>Inbio is a personal portfolio template. You can customize all.</p>
+      </div>
+      <hr style="color: lightgray;">
+      <div class="justify-content-end mx-2 my-3 row">
+        <ul class="mx-0 align-content-between">
+          <li class="mx-0"><a href="#" class="text-uppercase text-white">Home</a></li>
+          <li class="mx-0"><a href="#" class="text-uppercase text-white">Features</a></li>
+          <li class="mx-0"><a href="#" class="text-uppercase text-white">Portfolio</a></li>
+          <li class="mx-0"><a href="#" class="text-uppercase text-white">Resume</a></li>
+          <li class="mx-0"><a href="#" class="text-uppercase text-white">Clients</a></li>
+          <li class="mx-0"><a href="#" class="text-uppercase text-white">Pricing</a></li>
+          <li class="mx-0"><a href="#" class="text-uppercase text-white">Blog</a></li>
+          <li class="mx-0"><a href="#" class="text-uppercase text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div class="continer row mx-3 my-5 text-white">
+        <div class="row">
+          <p class="row text-uppercase">Find with me</p>
+        </div>
+        <div class="row justify-content-start">
+          <div class="col-3 m-0">
+            <a href="" class="btn btn-dark align-content-center align-middle py-2"
+              style="background-color: rgba(255, 255, 255,.1);">
+              <i class="fa-brands fa-facebook fa-2x w-100 h-100"></i>
+            </a>
+          </div>
+          <div class="col-3 m-0">
+            <a href="" class="btn btn-dark align-content-center align-middle py-2"
+              style="background-color: rgba(255, 255, 255,.1);">
+              <i class="fa-brands fa-instagram fa-2x w-100 h-100"></i>
+            </a>
+          </div>
+          <div class="col-3 m-0">
+            <a href="" class="btn btn-dark align-content-center align-middle py-2"
+              style="background-color: rgba(255, 255, 255,.1);">
+              <i class="fa-brands fa-linkedin fa-2x w-100 h-100"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!--WELCOME-->
+    <div class="row">
+      <div class="container-fluid" id="sobremi" style="margin-top: 10%;">
+        <div class="row">
+
+        </div>
+        <div class="row justify-content-center">
+          <div class="avatar-contenedor col-12 mb-5 d-block d-sm-none" style="margin-top: 30%;">
+            <div class="object-fit-contain border rounded overflow-visible custom-shadow border-dark bg-dark">
+              <img src="./assets/img/avatar/banner-01.png" alt="foto-avatar" title="avatar" class="img-fluid avatar">
+            </div>
+          </div>
+          <div class="col-12 col-sm-7 p-5">
+            <h6 class="text-uppercase">Welcome to my world</h6>
+            <!-- TITULO MQUINA DE ESCRIBIR -->
+            <div class='console-container continer'>
+              <div class="row-cols-1">
+                <h1 class="display-4">
+                  Hi, I´m <span style="color: #F31A59;">John Lee</span> <br> a
+                  <span id='text'></span>
+                  <div class='console-underscore' id='console'></div>
+                </h1>
+              </div>
+              <div class="row-cols-1">
+                <p class="text-light-emphasis">I use animation as a third dimension by which to simplify experiences
+                  and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing
+                  it
+                  in
+                  ways that.</p>
+              </div>
+
+            </div>
+            <script src="./assets/js/maquina_escribir_titulo.js"></script>
+            <div class="container mx-3 my-5">
+              <div class="row">
+                <div class="continer col-6 col-lg-4 text-white">
+                  <div class="row">
+                    <p class="row text-uppercase">Find with me</p>
+                  </div>
+                  <div class="row p-0">
+                    <div class="col px-0">
+                      <a href="" class="btn btn-dark align-content-center align-middle py-2 bg-dark custom-shadow"
+                        style="background-color: rgba(255, 255, 255,.1);">
+                        <i class="fa-brands fa-facebook fa-2x w-100 h-100"></i>
+                      </a>
+                    </div>
+                    <div class="col px-0">
+                      <a href="" class="btn btn-dark align-content-center align-middle py-2 bg-dark custom-shadow"
+                        style="background-color: rgba(255, 255, 255,.1);">
+                        <i class="fa-brands fa-instagram fa-2x w-100 h-100"></i>
+                      </a>
+                    </div>
+                    <div class="col px-0">
+                      <a href="" class="btn btn-dark align-content-center align-middle py-2 bg-dark custom-shadow"
+                        style="background-color: rgba(255, 255, 255,.1);">
+                        <i class="fa-brands fa-linkedin fa-2x w-100 h-100"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="continer col-6 col-lg-4 text-white">
+                  <div class="row">
+                    <p class="row text-uppercase">Best skills on</p>
+                  </div>
+                  <div class="row p-0">
+                    <div class="col px-0">
+                      <a href="" class="btn btn-dark align-content-center align-middle py-2 bg-dark custom-shadow"
+                        style="background-color: rgba(255, 255, 255,.1);">
+                        <i class="fa-brands fa-invision fa-2x w-100 h-100"></i>
+                      </a>
+                    </div>
+                    <div class="col px-0">
+                      <a href="" class="btn btn-dark align-content-center align-middle py-2 bg-dark custom-shadow"
+                        style="background-color: rgba(255, 255, 255,.1);">
+                        <i class="fa-brands fa-sketch fa-2x w-100 h-100"></i>
+                      </a>
+                    </div>
+                    <div class="col px-0">
+                      <a href="" class="btn btn-dark align-content-center align-middle py-2 bg-dark custom-shadow"
+                        style="background-color: rgba(255, 255, 255,.1);">
+                        <i class="fa-brands fa-figma fa-2x w-100 h-100"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="avatar-contenedor col-4 mt-5 d-none d-sm-block">
+            <div class="object-fit-contain border rounded overflow-visible bottom-0 custom-shadow border-dark bg-dark">
+              <img src="./assets/img/avatar/banner-01.png" alt="foto-avatar" title="avatar"
+                class="img-fluid avatar sticky-bottom" style="margin-top: -25%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <!--BOTON VUELTA INICIO-->
+    <div class="row">
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="go_top_button">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+    <!--FEATURES-->
+    <div class="row">
+      <div class="continer" id="features">
+        <div class="row" style="color: #F31A59;">
+          <h2 class="">Features</h2>
+        </div>
+        <div class="row" style="font-weight: bolder;">
+          <h2 class="display-1 text-white">What I Do</h2>
+        </div>
+        <div class="row m-3">
+          <div class="col-sm-12 col-md-6 col-lg-4 my-2 my-md-4">
+            <div class="cards card text-bg-dark custom-shadow">
+              <div class="card-body">
+                <i class="fa-solid fa-bars fa-2x"></i>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn rounded-5 border-dark">
+                  <span class="fas fa-arrow-right fa-2x"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-2 my-md-4">
+            <div class="cards card text-bg-dark custom-shadow">
+              <div class="card-body">
+                <i class="fa-solid fa-book-open fa-2x"></i>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn rounded-5 border-dark">
+                  <span class="fas fa-arrow-right fa-2x"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-2 my-md-4">
+            <div class="cards card text-bg-dark custom-shadow">
+              <div class="card-body">
+                <i class="fa-solid fa-tv fa-2x"></i>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn rounded-5 border-dark">
+                  <span class="fas fa-arrow-right fa-2x"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-2 my-md-4">
+            <div class="cards card text-bg-dark custom-shadow">
+              <div class="card-body">
+                <i class="fa-brands fa-twitch fa-2x"></i>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn rounded-5 border-dark">
+                  <span class="fas fa-arrow-right fa-2x"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-2 my-md-4">
+            <div class="cards card text-bg-dark custom-shadow">
+              <div class="card-body">
+                <i class="fa-solid fa-wifi fa-2x"></i>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn rounded-5 border-dark">
+                  <span class="fas fa-arrow-right fa-2x"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 my-2 my-md-4">
+            <div class="cards card text-bg-dark custom-shadow">
+              <div class="card-body">
+                <i class="fa-brands fa-slack fa-2x"></i>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn rounded-5 border-dark">
+                  <span class="fas fa-arrow-right fa-2x"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <!-- MY PORTFOLIO -->
+    <div class="row justify-content-center">
+      <div class="continer" id="portfolio">
+        <div class="row justify-content-center" style="color: #F31A59;">
+          <h2 class="col text-center">Visit my portfolio and keep your feedback</h2>
+        </div>
+        <div class="row text-center" style="font-weight: bolder;">
+          <h2 class="display-1 text-white">My Portfolio</h2>
+        </div>
+        <div class="container-fluid card-group my-5">
+          <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-4 col-lg-3 card m-3 p-3 rounded bg-dark text-white custom-shadow">
+              <img src="./assets/img/portfolio/portfolio-01.jpg" class="card-img-top rounded m-2" alt="..."
+                style="width: 95%;">
+              <div class="card-body container">
+                <div class="row">
+                  <h6 class="card-title text-uppercase col-8 c-primary">Development
+                  </h6>
+                  <p class="col-2 d-flex f-montserrat"><i class="fa-regular fa-heart m-1"></i>600</p>
+                </div>
+                <div class="row">
+                  <h4 class="col-12" style="font-weight: bolder;">The service provide for desing</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 card m-3 p-3 rounded bg-dark text-white custom-shadow">
+              <img src="./assets/img/portfolio/portfolio-02.jpg" class="card-img-top rounded m-2" alt="..."
+                style="width: 95%;">
+              <div class="card-body container">
+                <div class="row">
+                  <h6 class="card-title text-uppercase col-8 c-primary">Aplication
+                  </h6>
+                  <p class="col-2 d-flex f-montserrat"><i class="fa-regular fa-heart m-1"></i>750</p>
+                </div>
+                <div class="row">
+                  <h4 class="col-12" style="font-weight: bolder;">Mobile app landing design & app</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 card m-3 p-3 rounded bg-dark text-white custom-shadow">
+              <img src="./assets/img/portfolio/portfolio-03.jpg" class="card-img-top rounded m-2" alt="..."
+                style="width: 95%;">
+              <div class="card-body container">
+                <div class="row">
+                  <h6 class="card-title text-uppercase col-8 c-primary">Photoshop
+                  </h6>
+                  <p class="col-2 d-flex f-montserrat"><i class="fa-regular fa-heart m-1"></i>630</p>
+                </div>
+                <div class="row">
+                  <h4 class="col-12" style="font-weight: bolder;">Logo design creativity & Application</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 card m-3 p-3 rounded bg-dark text-white custom-shadow">
+              <img src="./assets/img/portfolio/portfolio-01.jpg" class="card-img-top rounded m-2" alt="..."
+                style="width: 95%;">
+              <div class="card-body container">
+                <div class="row">
+                  <h6 class="card-title text-uppercase col-8 c-primary">Figma
+                  </h6>
+                  <p class="col-2 d-flex f-montserrat"><i class="fa-regular fa-heart m-1"></i>360</p>
+                </div>
+                <div class="row">
+                  <h4 class="col-12" style="font-weight: bolder;">Movile app landing design & Service</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 card m-3 p-3 rounded bg-dark text-white custom-shadow">
+              <img src="./assets/img/portfolio/portfolio-02.jpg" class="card-img-top rounded m-2" alt="..."
+                style="width: 95%;">
+              <div class="card-body container">
+                <div class="row">
+                  <h6 class="card-title text-uppercase col-8 c-primary">Web design
+                  </h6>
+                  <p class="col-2 d-flex f-montserrat"><i class="fa-regular fa-heart m-1"></i>280</p>
+                </div>
+                <div class="row">
+                  <h4 class="col-12" style="font-weight: bolder;">Design for Tecnology & service</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 card m-3 p-3 rounded bg-dark text-white custom-shadow">
+              <img src="./assets/img/portfolio/portfolio-03.jpg" class="card-img-top rounded m-2" alt="..."
+                style="width: 95%;">
+              <div class="card-body container">
+                <div class="row">
+                  <h6 class="card-title text-uppercase col-8 c-primary">Web Design
+                  </h6>
+                  <p class="col-2 d-flex f-montserrat"><i class="fa-regular fa-heart m-1"></i>630</p>
+                </div>
+                <div class="row">
+                  <h4 class="col-12" style="font-weight: bolder;">App for Tecnology & service</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <!-- MY RESUME -->
+    <div class="row justify-content-center">
+      <div class="continer" id="portfolio">
+        <div class="row justify-content-center" style="color: #F31A59;">
+          <h2 class="col text-center">7+ Years of Experience</h2>
+        </div>
+        <div class="row text-center" style="font-weight: bolder;">
+          <h2 class="display-1 text-white">My Resume</h2>
+        </div>
+        <div class="btn-group btn-group-toggle w-100 custom-shadow my-5 rounded" data-toggle="buttons">
+          <label class="btn btn-dark boton-selector py-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseProfesionalSkills" aria-expanded="false" aria-controls="collapseProfesionalSkills">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked">
+            Profesional
+            Skills
+          </label>
+          <label class="btn btn-dark boton-selector py-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseEducational" aria-expanded="false" aria-controls="collapseEducational">
+            <input type="radio" name="options" id="option2" autocomplete="off"> Education
+          </label>
+          <label class="btn btn-dark boton-selector py-4">
+            <input type="radio" name="options" id="option3" autocomplete="off"> Experience
+          </label>
+          <label class="btn btn-dark boton-selector py-4">
+            <input type="radio" name="options" id="option3" autocomplete="off"> Interview
+          </label>
+        </div>
+        <div class="collapse collapse-control" id="collapseProfesionalSkills">
+          <div class="">
+            <div class="container mt-5 mb-5">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="row" style="color: #F31A59;">
+                    <h4 class="col">2007 - 2010</h4>
+                  </div>
+                  <div class="row" style="font-weight: bolder;">
+                    <h4 class="display-6">Education Quality</h4>
+                  </div>
+                  <ul class="timeline row">
+                    <li>
+                      <div class="card bg-dark text-white continer">
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-6 my-auto">
+                              <h5 class="card-title">Personal Portfolio April Fools</h5>
+                              <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">University of DVI (1997
+                                - 2001)
+                              </h6>
+                            </div>
+                            <div class="col-4 m-auto me-0 align-content-end">
+                              <div class="btn btn-dark custom-shadow" style="color: #F31A59;">4.30/5</div>
+                            </div>
+                          </div>
+
+                          <hr style="border: 1px solid bisque;">
+                          <p class="card-text" style="color: bisque;">The education should be very interactual. Ut
+                            tincidunt est ac dolor
+                            aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
+                            ante.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="card bg-dark text-white continer">
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-6 my-auto">
+                              <h5 class="card-title">Personal Portfolio April Fools</h5>
+                              <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">University of DVI (1997
+                                - 2001)
+                              </h6>
+                            </div>
+                            <div class="col-4 m-auto me-0 align-content-end">
+                              <div class="btn btn-dark custom-shadow" style="color: #F31A59;">4.30/5</div>
+                            </div>
+                          </div>
+
+                          <hr style="border: 1px solid bisque;">
+                          <p class="card-text" style="color: bisque;">The education should be very interactual. Ut
+                            tincidunt est ac dolor
+                            aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
+                            ante.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="card bg-dark text-white continer">
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-6 my-auto">
+                              <h5 class="card-title">Personal Portfolio April Fools</h5>
+                              <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">University of DVI (1997
+                                - 2001)
+                              </h6>
+                            </div>
+                            <div class="col-4 m-auto me-0 align-content-end">
+                              <div class="btn btn-dark custom-shadow" style="color: #F31A59;">4.30/5</div>
+                            </div>
+                          </div>
+
+                          <hr style="border: 1px solid bisque;">
+                          <p class="card-text" style="color: bisque;">The education should be very interactual. Ut
+                            tincidunt est ac dolor
+                            aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
+                            ante.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="row" style="color: #F31A59;">
+                    <h4 class="col">2007 - 2010</h4>
+                  </div>
+                  <div class="row" style="font-weight: bolder;">
+                    <h4 class="display-6">Education Quality</h4>
+                  </div>
+                  <ul class="timeline row">
+                    <li>
+                      <div class="card bg-dark text-white continer">
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-6 my-auto">
+                              <h5 class="card-title">Personal Portfolio April Fools</h5>
+                              <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">University of DVI (1997
+                                - 2001)
+                              </h6>
+                            </div>
+                            <div class="col-4 m-auto me-0 align-content-end">
+                              <div class="btn btn-dark custom-shadow" style="color: #F31A59;">4.30/5</div>
+                            </div>
+                          </div>
+
+                          <hr style="border: 1px solid bisque;">
+                          <p class="card-text" style="color: bisque;">The education should be very interactual. Ut
+                            tincidunt est ac dolor
+                            aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
+                            ante.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="card bg-dark text-white continer">
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-6 my-auto">
+                              <h5 class="card-title">Personal Portfolio April Fools</h5>
+                              <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">University of DVI (1997
+                                - 2001)
+                              </h6>
+                            </div>
+                            <div class="col-4 m-auto me-0 align-content-end">
+                              <div class="btn btn-dark custom-shadow" style="color: #F31A59;">4.30/5</div>
+                            </div>
+                          </div>
+
+                          <hr style="border: 1px solid bisque;">
+                          <p class="card-text" style="color: bisque;">The education should be very interactual. Ut
+                            tincidunt est ac dolor
+                            aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
+                            ante.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="card bg-dark text-white continer">
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-6 my-auto">
+                              <h5 class="card-title">Personal Portfolio April Fools</h5>
+                              <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">University of DVI (1997
+                                - 2001)
+                              </h6>
+                            </div>
+                            <div class="col-4 m-auto me-0 align-content-end">
+                              <div class="btn btn-dark custom-shadow" style="color: #F31A59;">4.30/5</div>
+                            </div>
+                          </div>
+
+                          <hr style="border: 1px solid bisque;">
+                          <p class="card-text" style="color: bisque;">The education should be very interactual. Ut
+                            tincidunt est ac dolor
+                            aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
+                            ante.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse collapse-control" id="collapseEducational">
+          <div class="">
+            <div class="container mt-5 mb-5">
+              <div class="row">
+                <div class="col-12 col-lg-6 mb-5">
+                  <div class="row" style="color: #F31A59;">
+                    <h4 class="col">2007 - 2010</h4>
+                  </div>
+                  <div class="row" style="font-weight: bolder;">
+                    <h4 class="display-6 text-white">Education Quality</h4>
+                  </div>
+                  <div class="row mt-3">
+                    <h6 class="col text-white text-uppercase">photoshop</h6>
+                  </div>
+                  <div class="progress bg-dark custom-shadow" role="progressbar" aria-label="Danger example"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+                  </div>
+                  <div class="row mt-3">
+                    <h6 class="col text-white text-uppercase">figma</h6>
+                  </div>
+                  <div class="progress bg-dark custom-shadow" role="progressbar" aria-label="Danger example"
+                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="95">
+                    <div class="progress-bar bg-danger" style="width: 95%">95%</div>
+                  </div>
+                  <div class="row mt-3">
+                    <h6 class="col text-white text-uppercase">Adeobe xd</h6>
+                  </div>
+                  <div class="progress bg-dark custom-shadow" role="progressbar" aria-label="Danger example"
+                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="60">
+                    <div class="progress-bar bg-danger" style="width: 60%">60%</div>
+                  </div>
+                  <div class="row mt-3">
+                    <h6 class="col text-white text-uppercase">adobe ilustrator</h6>
+                  </div>
+                  <div class="progress bg-dark custom-shadow" role="progressbar" aria-label="Danger example"
+                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="70">
+                    <div class="progress-bar bg-danger" style="width: 70%">70%</div>
+                  </div>
+                  <div class="row mt-3">
+                    <h6 class="col text-white text-uppercase">design</h6>
+                  </div>
+                  <div class="progress bg-dark custom-shadow" role="progressbar" aria-label="Danger example"
+                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="90">
+                    <div class="progress-bar bg-danger" style="width: 90%">90%</div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="row" style="color: #F31A59;">
+                    <h4 class="col">2007 - 2010</h4>
+                  </div>
+                  <div class="row" style="font-weight: bolder;">
+                    <h4 class="display-6 text-white">Developer Skills</h4>
+                  </div>
+                  <div class="row mt-3">
+                    <h6 class="col text-white text-uppercase">html</h6>
+                  </div>
+                  <div class="progress bg-dark custom-shadow" role="progressbar" aria-label="Danger example"
+                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="85">
+                    <div class="progress-bar bg-danger" style="width: 85%">85%</div>
+                  </div>
+                  <div class="row mt-3">
+                    <h6 class="col text-white text-uppercase">css</h6>
+                  </div>
+                  <div class="progress bg-dark custom-shadow" role="progressbar" aria-label="Danger example"
+                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="80">
+                    <div class="progress-bar bg-danger" style="width: 80%">80%</div>
+                  </div>
+                  <div class="row mt-3">
+                    <h6 class="col text-white text-uppercase">javascript</h6>
+                  </div>
+                  <div class="progress bg-dark custom-shadow" role="progressbar" aria-label="Danger example"
+                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="90">
+                    <div class="progress-bar bg-danger" style="width: 90%">90%</div>
+                  </div>
+                  <div class="row mt-3">
+                    <h6 class="col text-white text-uppercase">software</h6>
+                  </div>
+                  <div class="progress bg-dark custom-shadow" role="progressbar" aria-label="Danger example"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="75">
+                    <div class="progress-bar bg-danger" style="width: 75%">75%</div>
+                  </div>
+                  <div class="row mt-3">
+                    <h6 class="col text-white text-uppercase">plugins</h6>
+                  </div>
+                  <div class="progress bg-dark custom-shadow" role="progressbar" aria-label="Danger example"
+                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="70">
+                    <div class="progress-bar bg-danger" style="width: 70%">70%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <!-- TESTIMONIAL -->
+    <div class="row justify-content-center">
+      <div class="continer" id="testimonial">
+        <div class="row justify-content-center" style="color: #F31A59;">
+          <h2 class="col text-center text-uppercase">What clients say</h2>
+        </div>
+        <div class="row text-center" style="font-weight: bolder;">
+          <h2 class="display-1 text-white">Testimonial</h2>
+        </div>
+        <div class="row m-3">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active container">
+                <div class="row">
+                  <div class="card-group m-2">
+                    <div class="card col-12 col-lg-4 m-3 p-3 rounded bg-dark text-white custom-shadow">
+                      <img src="./assets/img/testimonial/final-home--1st.png" class="card-img-top rounded m-2" alt="..."
+                        style="width: 95%;">
+                      <div class="card-body container">
+                        <div class="row">
+                          <h6 class="card-title text-uppercase col-8 c-primary">Rainbow themes
+                          </h6>
+                        </div>
+                        <div class="row">
+                          <h4 class="col-12" style="font-weight: bolder;">Nevine Acotanza</h4>
+                          <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">Chef Operating officer
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 m-3">
+                      <i class="fa-solid fa-quote-left fa-4x" style="color: #F31A59;"></i>
+                      <div class="card bg-dark text-white continer">
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-6 my-auto">
+                              <h5 class="card-title">Android App Development</h5>
+                              <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">via Upwork - Mar 4, 2015 - Aug
+                                30, 2021
+                              </h6>
+                            </div>
+                            <div class="col-4 m-auto me-0 align-content-end">
+                              <div class="btn btn-dark custom-shadow" style="color: yellow;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                            </div>
+                          </div>
+
+                          <hr style="border: 1px solid darkgrey;">
+                          <p class="card-text" style="color: bisque;">
+                            Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam
+                            sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                            hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris
+                            .
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <div class="row">
+                  <div class="card-group m-2">
+                    <div class="card col-12 col-lg-4 m-3 p-3 rounded bg-dark text-white custom-shadow">
+                      <img src="./assets/img/testimonial/final-home--2nd.png" class="card-img-top rounded m-2" alt="..."
+                        style="width: 95%;">
+                      <div class="card-body container">
+                        <div class="row">
+                          <h6 class="card-title text-uppercase col-8 c-primary">Rainbow themes
+                          </h6>
+                        </div>
+                        <div class="row">
+                          <h4 class="col-12" style="font-weight: bolder;">Nevine Acotanza</h4>
+                          <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">Chef Operating officer
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 m-3">
+                      <i class="fa-solid fa-quote-left fa-4x" style="color: #F31A59;"></i>
+                      <div class="card bg-dark text-white continer">
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-6 my-auto">
+                              <h5 class="card-title">Android App Development</h5>
+                              <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">via Upwork - Mar 4, 2015 - Aug
+                                30, 2021
+                              </h6>
+                            </div>
+                            <div class="col-4 m-auto me-0 align-content-end">
+                              <div class="btn btn-dark custom-shadow" style="color: yellow;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                            </div>
+                          </div>
+
+                          <hr style="border: 1px solid darkgrey;">
+                          <p class="card-text" style="color: bisque;">
+                            Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam
+                            sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                            hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris
+                            .
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <div class="row">
+                  <div class="card-group m-2">
+                    <div class="card col-12 col-lg-4 m-3 p-3 rounded bg-dark text-white custom-shadow">
+                      <img src="./assets/img/testimonial/final-home--3rd.png" class="card-img-top rounded m-2" alt="..."
+                        style="width: 95%;">
+                      <div class="card-body container">
+                        <div class="row">
+                          <h6 class="card-title text-uppercase col-8 c-primary">Rainbow themes
+                          </h6>
+                        </div>
+                        <div class="row">
+                          <h4 class="col-12" style="font-weight: bolder;">Nevine Acotanza</h4>
+                          <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">Chef Operating officer
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 m-3">
+                      <i class="fa-solid fa-quote-left fa-4x" style="color: #F31A59;"></i>
+                      <div class="card bg-dark text-white continer">
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-6 my-auto">
+                              <h5 class="card-title">Android App Development</h5>
+                              <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">via Upwork - Mar 4, 2015 - Aug
+                                30, 2021
+                              </h6>
+                            </div>
+                            <div class="col-4 m-auto me-0 align-content-end">
+                              <div class="btn btn-dark custom-shadow" style="color: yellow;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                            </div>
+                          </div>
+
+                          <hr style="border: 1px solid darkgrey;">
+                          <p class="card-text" style="color: bisque;">
+                            Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam
+                            sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                            hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris
+                            .
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <div class="row">
+                  <div class="card-group m-2">
+                    <div class="card col-12 col-lg-4 m-3 p-3 rounded bg-dark text-white custom-shadow">
+                      <img src="./assets/img/testimonial/final-home--4th.png" class="card-img-top rounded m-2" alt="..."
+                        style="width: 95%;">
+                      <div class="card-body container">
+                        <div class="row">
+                          <h6 class="card-title text-uppercase col-8 c-primary">Rainbow themes
+                          </h6>
+                        </div>
+                        <div class="row">
+                          <h4 class="col-12" style="font-weight: bolder;">Nevine Acotanza</h4>
+                          <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">Chef Operating officer
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 m-3">
+                      <i class="fa-solid fa-quote-left fa-4x" style="color: #F31A59;"></i>
+                      <div class="card bg-dark text-white continer">
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-6 my-auto">
+                              <h5 class="card-title">Android App Development</h5>
+                              <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">via Upwork - Mar 4, 2015 - Aug
+                                30, 2021
+                              </h6>
+                            </div>
+                            <div class="col-4 m-auto me-0 align-content-end">
+                              <div class="btn btn-dark custom-shadow" style="color: yellow;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                            </div>
+                          </div>
+
+                          <hr style="border: 1px solid darkgrey;">
+                          <p class="card-text" style="color: bisque;">
+                            Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam
+                            sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                            hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris
+                            .
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <div class="row">
+                  <div class="card-group m-2">
+                    <div class="card col-12 col-lg-4 m-3 p-3 rounded bg-dark text-white custom-shadow">
+                      <img src="./assets/img/testimonial/final-home--5th.png" class="card-img-top rounded m-2" alt="..."
+                        style="width: 95%;">
+                      <div class="card-body container">
+                        <div class="row">
+                          <h6 class="card-title text-uppercase col-8 c-primary">Rainbow themes
+                          </h6>
+                        </div>
+                        <div class="row">
+                          <h4 class="col-12" style="font-weight: bolder;">Nevine Acotanza</h4>
+                          <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">Chef Operating officer
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 m-3">
+                      <i class="fa-solid fa-quote-left fa-4x" style="color: #F31A59;"></i>
+                      <div class="card bg-dark text-white continer">
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-6 my-auto">
+                              <h5 class="card-title">Android App Development</h5>
+                              <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">via Upwork - Mar 4, 2015 - Aug
+                                30, 2021
+                              </h6>
+                            </div>
+                            <div class="col-4 m-auto me-0 align-content-end">
+                              <div class="btn btn-dark custom-shadow" style="color: yellow;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                            </div>
+                          </div>
+
+                          <hr style="border: 1px solid darkgrey;">
+                          <p class="card-text" style="color: bisque;">
+                            Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam
+                            sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                            hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris
+                            .
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <!-- AWESOME CLIENTS -->
+    <div class="row">
+      <div class="continer" id="awesome-clients">
+        <div class="row" style="color: #F31A59;">
+          <h2 class="">Popular Clients</h2>
+        </div>
+        <div class="row" style="font-weight: bolder;">
+          <h2 class="display-1 text-white">Awesome Clients</h2>
+        </div>
+        <div class="accordion accordion-flush mt-5 mb-5 p-auto" id="accordionFlushExample">
+          <div class="row">
+            <div class="col-12 col-md-3 sticky-top h-100" style="padding-top: 10%;">
+              <div class=" h-100 custom-shadow rounded">
+                <div class="accordion-item border-dark">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      JavaScript
+                    </button>
+                  </h2>
+                </div>
+                <div class="accordion-item border-dark">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Product Design
+                    </button>
+                  </h2>
+                </div>
+                <div class="accordion-item border-dark">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Wordpress
+                    </button>
+                  </h2>
+                </div>
+                <div class="accordion-item border-dark">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      HTML to React
+                    </button>
+                  </h2>
+                </div>
+                <div class="accordion-item border-dark">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFifth" aria-expanded="false" aria-controls="flush-collapseFifth">
+                      React to Laravel
+                    </button>
+                  </h2>
+                </div>
+                <div class="accordion-item border-dark">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                      Python
+                    </button>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="col- 12 col-md-8 rounded">
+              <div class="accordion-item bg-dark text-white border-dark">
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="card-group row-cols-3">
+                      <div class="col">
+                        <div class="card bg-dark">
+                          <div class="card-img-container my-4">
+                            <img src="./assets/img/clients/client1.png" class="rounded mx-auto d-block" alt="...">
+                          </div>
+                          <div class="card-body">
+                            <hr style="border: 1px solid grey;">
+                            <h5 class="card-title text-white">John Due</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card bg-dark">
+                          <div class="card-img-container my-4">
+                            <img src="./assets/img/clients/client2.png" class="rounded mx-auto d-block" alt="...">
+                          </div>
+                          <div class="card-body">
+                            <hr style="border: 1px solid grey;">
+                            <h5 class="card-title text-white">Smiths Marth</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card bg-dark">
+                          <div class="card-img-container my-4">
+                            <img src="./assets/img/clients/client3.png" class="rounded mx-auto d-block" alt="...">
+                          </div>
+                          <div class="card-body">
+                            <hr style="border: 1px solid grey;">
+                            <h5 class="card-title text-white">Add Dev</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card bg-dark">
+                          <div class="card-img-container my-4">
+                            <img src="./assets/img/clients/client4.png" class="rounded mx-auto d-block" alt="...">
+                          </div>
+                          <div class="card-body">
+                            <hr style="border: 1px solid grey;">
+                            <h5 class="card-title text-white">Mila Dus</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card bg-dark">
+                          <div class="card-img-container my-4">
+                            <img src="./assets/img/clients/client1.png" class="rounded mx-auto d-block" alt="...">
+                          </div>
+                          <div class="card-body">
+                            <hr style="border: 1px solid grey;">
+                            <h5 class="card-title text-white">John Due</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card bg-dark">
+                          <div class="card-img-container my-4">
+                            <img src="./assets/img/clients/client2.png" class="rounded mx-auto d-block" alt="...">
+                          </div>
+                          <div class="card-body">
+                            <hr style="border: 1px solid grey;">
+                            <h5 class="card-title text-white">Smiths Marth</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card bg-dark">
+                          <div class="card-img-container my-4">
+                            <img src="./assets/img/clients/client3.png" class="rounded mx-auto d-block" alt="...">
+                          </div>
+                          <div class="card-body">
+                            <hr style="border: 1px solid grey;">
+                            <h5 class="card-title text-white">Add Dev</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card bg-dark">
+                          <div class="card-img-container my-4">
+                            <img src="./assets/img/clients/client4.png" class="rounded mx-auto d-block" alt="...">
+                          </div>
+                          <div class="card-body">
+                            <hr style="border: 1px solid grey;">
+                            <h5 class="card-title text-white">Mila Dus</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card bg-dark">
+                          <div class="card-img-container my-4">
+                            <img src="./assets/img/clients/client1.png" class="rounded mx-auto d-block" alt="...">
+                          </div>
+                          <div class="card-body">
+                            <hr style="border: 1px solid grey;">
+                            <h5 class="card-title text-white">John Due</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card bg-dark">
+                          <div class="card-img-container my-4">
+                            <img src="./assets/img/clients/client2.png" class="rounded mx-auto d-block" alt="...">
+                          </div>
+                          <div class="card-body">
+                            <hr style="border: 1px solid grey;">
+                            <h5 class="card-title text-white">Smiths Marth</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card bg-dark">
+                          <div class="card-img-container my-4">
+                            <img src="./assets/img/clients/client3.png" class="rounded mx-auto d-block" alt="...">
+                          </div>
+                          <div class="card-body">
+                            <hr style="border: 1px solid grey;">
+                            <h5 class="card-title text-white">Add Dev</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card bg-dark">
+                          <div class="card-img-container my-4">
+                            <img src="./assets/img/clients/client4.png" class="rounded mx-auto d-block" alt="...">
+                          </div>
+                          <div class="card-body">
+                            <hr style="border: 1px solid grey;">
+                            <h5 class="card-title text-white">Mila Dus</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark text-white border-dark">
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the
+                    <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
+                    being
+                    filled with some actual content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark text-white border-dark">
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the
+                    <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the space to make it look, at least at first
+                    glance, a bit more representative of how this would look in a real-world application.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark text-white border-dark">
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the
+                    <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the space to make it look, at least at first
+                    glance, a bit more representative of how this would look in a real-world application.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark text-white border-dark">
+                <div id="flush-collapseFifth" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the
+                    <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the space to make it look, at least at first
+                    glance, a bit more representative of how this would look in a real-world application.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark text-white border-dark">
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                    the
+                    <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the space to make it look, at least at first
+                    glance, a bit more representative of how this would look in a real-world application.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <!-- MY PRICING -->
+    <div class="row justify-content-between" id="pricing">
+      <div class="col-12 col-lg-3 m-4">
+        <div class="row" style="color: #F31A59;">
+          <h2 class="">Pricing</h2>
+        </div>
+        <div class="row" style="font-weight: bolder;">
+          <h2 class="display-1" style="color: lightblue;">My Pricing</h2>
+        </div>
+      </div>
+      <div class="col-12 col-lg-7 card m-2 bg-dark border-dark custom-shadow px-0 mb-3">
+        <div class="btn-group btn-group-toggle w-100 mx-0 rounded" data-toggle="buttons">
+          <label class="btn btn-dark boton-selector py-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseStatic" aria-expanded="false" aria-controls="collapseStatic">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked">
+            Static
+          </label>
+          <label class="btn btn-dark boton-selector py-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseStandart" aria-expanded="false" aria-controls="collapseStandart">
+            <input type="radio" name="options" id="option2" autocomplete="off"> Standard
+          </label>
+          <label class="btn btn-dark boton-selector py-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsePremium" aria-expanded="false" aria-controls="collapsePremium">
+            <input type="radio" name="options" id="option3" autocomplete="off"> Premium
+          </label>
+        </div>
+        <div class="collapse collapse-control" id="collapseStatic">
+          <div class="">
+            <div class="container mt-3 mb-5">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card bg-dark border-dark text-white continer">
+                    <div class="card-body">
+                      <div class="row justify-content-center">
+                        <div class="col-6 my-auto">
+                          <h5 class="card-title" style="color: lightblue;">Make Your Single Page</h5>
+                          <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">Elementor
+                          </h6>
+                        </div>
+                        <div class="col-4 m-auto me-0 align-content-end">
+                          <div class="btn btn-dark custom-shadow" style="color: #F31A59;">$30.00</div>
+                        </div>
+                      </div>
+                      <div class="row">
+
+                        <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">Making this the first true
+                          generator on the Internet. It uses a dictionary & plugin Development.
+                        </h6>
+                      </div>
+                      <div class="row m-3">
+                        <div class="col-6">
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                        </div>
+                        <div class="col-6">
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row mt-5">
+                        <button type="button" class="btn btn-dark custom-shadow m-0 p-2"
+                          style="color: #F31A59;display: flex;">
+                          <div class=" text-uppercase align-middle f-montserrat w-100 my-auto"
+                            style="color: #F31A59; font-weight: bolder;">order now </div>
+                          <i class="fa-solid fa-arrow-right fa-2x"></i>
+                        </button>
+                      </div>
+                      <div class="row justify-content-center mt-3">
+                        <div class="col" style="display: inline;">
+                          <p style="color: bisque;"><i class="fa-regular fa-clock""></i> 2 Days Delivery</p>
+                        </div>
+                        <div class=" col" style="display: inline;">
+                              <p style="color: bisque;"><i class="fa-solid fa-chart-simple"></i> Unlimited Revission</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse collapse-control" id="collapseStandart">
+          <div class="">
+            <div class="container mt-3 mb-5">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card bg-dark border-dark text-white continer">
+                    <div class="card-body">
+                      <div class="row justify-content-center">
+                        <div class="col-6 my-auto">
+                          <h5 class="card-title" style="color: lightblue;">Design Make this Page</h5>
+                          <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">Elementor
+                          </h6>
+                        </div>
+                        <div class="col-4 m-auto me-0 align-content-end">
+                          <div class="btn btn-dark custom-shadow" style="color: #F31A59;">$50.00</div>
+                        </div>
+                      </div>
+                      <div class="row">
+
+                        <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">Making this the first true
+                          generator on the Internet. It uses a dictionary & plugin Development.
+                        </h6>
+                      </div>
+                      <div class="row m-3">
+                        <div class="col-6">
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                        </div>
+                        <div class="col-6">
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row mt-5">
+                        <button type="button" class="btn btn-dark custom-shadow m-0 p-2"
+                          style="color: #F31A59;display: flex;">
+                          <div class=" text-uppercase align-middle f-montserrat w-100 my-auto"
+                            style="color: #F31A59; font-weight: bolder;">order now </div>
+                          <i class="fa-solid fa-arrow-right fa-2x"></i>
+                        </button>
+                      </div>
+                      <div class="row justify-content-center mt-3">
+                        <div class="col" style="display: inline;">
+                          <p style="color: bisque;"><i class="fa-regular fa-clock""></i> 2 Days Delivery</p>
+                        </div>
+                        <div class=" col" style="display: inline;">
+                              <p style="color: bisque;"><i class="fa-solid fa-chart-simple"></i> Unlimited Revission</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse collapse-control" id="collapsePremium">
+          <div class="">
+            <div class="container mt-3 mb-5">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card bg-dark border-dark text-white continer">
+                    <div class="card-body">
+                      <div class="row justify-content-center">
+                        <div class="col-6 my-auto">
+                          <h5 class="card-title" style="color: lightblue;">Customize Your Single Page</h5>
+                          <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">Elementor
+                          </h6>
+                        </div>
+                        <div class="col-4 m-auto me-0 align-content-end">
+                          <div class="btn btn-dark custom-shadow" style="color: #F31A59;">$90.00</div>
+                        </div>
+                      </div>
+                      <div class="row">
+
+                        <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">Making this the first true
+                          generator on the Internet. It uses a dictionary & plugin Development.
+                        </h6>
+                      </div>
+                      <div class="row m-3">
+                        <div class="col-6">
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                        </div>
+                        <div class="col-6">
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                          <p class="card-text" style="color: bisque;">
+                            <i class="fa-solid fa-check"></i>1 Page with Elementor
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row mt-5">
+                        <button type="button" class="btn btn-dark custom-shadow m-0 p-2"
+                          style="color: #F31A59;display: flex;">
+                          <div class=" text-uppercase align-middle f-montserrat w-100 my-auto"
+                            style="color: #F31A59; font-weight: bolder;">order now </div>
+                          <i class="fa-solid fa-arrow-right fa-2x"></i>
+                        </button>
+                      </div>
+                      <div class="row justify-content-center mt-3">
+                        <div class="col" style="display: inline;">
+                          <p style="color: bisque;"><i class="fa-regular fa-clock""></i> 2 Days Delivery</p>
+                        </div>
+                        <div class=" col" style="display: inline;">
+                              <p style="color: bisque;"><i class="fa-solid fa-chart-simple"></i> Unlimited Revission</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <!-- MY BLOG -->
+    <div class="row my-5">
+      <div class="continer" id="blog">
+        <div class="row justify-content-center" style="color: #F31A59;">
+          <h6 class="col text-center text-uppercase">Visit my blog and keep your feedback</h6>
+        </div>
+        <div class="row text-center" style="font-weight: bolder;">
+          <h2 class="display-1 text-white">My Blog</h2>
+        </div>
+        <div class="row container-fluid card-group my-5">
+          <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-4 col-lg-3 card m-3 p-3 rounded bg-dark text-white custom-shadow">
+              <img src="./assets/img/blog/blog-01.jpg" class="card-img-top rounded m-2" alt="..." style="width: 95%;">
+              <div class="card-body container">
+                <div class="row">
+                  <h6 class="card-title text-uppercase col-6 c-primary">canada
+                  </h6>
+                  <p class="col-6 d-flex f-montserrat justify-content-center my-auto" style="font-size: small;"><i
+                      class="fa-regular fa-clock my-auto mx-1"></i> 2 min
+                    read</p>
+                </div>
+                <div class="row">
+                  <h4 class="col-12" style="font-weight: bolder;">T-shirt design is the part of design
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 card m-3 p-3 rounded bg-dark text-white custom-shadow">
+              <img src="./assets/img/blog/blog-02.jpg" class="card-img-top rounded m-2" alt="..." style="width: 95%;">
+              <div class="card-body container">
+                <div class="row">
+                  <h6 class="card-title text-uppercase col-6 c-primary">Development
+                  </h6>
+                  <p class="col-6 d-flex f-montserrat justify-content-center my-auto" style="font-size: small;"><i
+                      class="fa-regular fa-clock my-auto mx-1"></i> 2 hour
+                    read</p>
+                </div>
+                <div class="row">
+                  <h4 class="col-12" style="font-weight: bolder;">The services provide for design
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 card m-3 p-3 rounded bg-dark text-white custom-shadow">
+              <img src="./assets/img/blog/blog-03.jpg" class="card-img-top rounded m-2" alt="..." style="width: 95%;">
+              <div class="card-body container">
+                <div class="row">
+                  <h6 class="card-title text-uppercase col-6 c-primary">Aplication
+                  </h6>
+                  <p class="col-6 d-flex f-montserrat justify-content-center my-auto" style="font-size: small;"><i
+                      class="fa-regular fa-clock my-auto mx-1"></i> 5 min
+                    read</p>
+                </div>
+                <div class="row">
+                  <h4 class="col-12" style="font-weight: bolder;">Mobile app landing design & app maintain
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <!-- CONTACT ME -->
+    <div class="row">
+      <div class="continer col-12" id="blog">
+        <div class="row justify-content-center" style="color: #F31A59;">
+          <h6 class="col text-center text-uppercase">contact</h6>
+        </div>
+        <div class="row text-center" style="font-weight: bolder;">
+          <h2 class="display-1 text-white">Contact With Me</h2>
+        </div>
+        <div class="row card-group m-2 justify-content-center">
+          <div class="card col-12 col-lg-6 m-3 p-3 rounded bg-dark text-white custom-shadow">
+            <img src="./assets/img/contact1.png" class="card-img-top rounded m-2" alt="..." style="width: 95%;">
+            <div class="card-body container">
+              <div class="row">
+                <h6 class="card-title text-uppercase col-8 c-primary">Rainbow themes
+                </h6>
+              </div>
+              <div class="row">
+                <h4 class="col-12" style="font-weight: bolder;">Nevine Acotanza</h4>
+                <h6 class="col-12 card-subtitle mb-2 mt-2" style="color: bisque;">Chef Operating officer
+                </h6>
+                <div class="col-12">
+                  <h6 class="col-12 card-subtitle mb-2 mt-2" style="color: bisque;">I am available for freelance work.
+                    Connect with me via and call in to my account.
+                  </h6>
+                </div>
+                <div class="col-12 d-inline">
+                  <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">Phone: <span
+                      id="tlfnumber">+01234567890</span>
+                  </h6>
+                  <h6 class="card-subtitle mb-2 mt-2" style="color: bisque;">Email: <span
+                      id="email">admin@example.com</span>
+                  </h6>
+                </div>
+
+                <div class="continer row mx-0 my-5">
+                  <div class="row">
+                    <p class="row text-uppercase col-12" style="color: bisque;">Find with me</p>
+                  </div>
+                  <div class="row justify-content-start">
+                    <div class="col-3 m-0">
+                      <a href="" class="btn btn-dark align-content-center align-middle py-2"
+                        style="background-color: rgba(255, 255, 255,.1);">
+                        <i class="fa-brands fa-facebook fa-2x w-100 h-100"></i>
+                      </a>
+                    </div>
+                    <div class="col-3 m-0">
+                      <a href="" class="btn btn-dark align-content-center align-middle py-2"
+                        style="background-color: rgba(255, 255, 255,.1);">
+                        <i class="fa-brands fa-instagram fa-2x w-100 h-100"></i>
+                      </a>
+                    </div>
+                    <div class="col-3 m-0">
+                      <a href="" class="btn btn-dark align-content-center align-middle py-2"
+                        style="background-color: rgba(255, 255, 255,.1);">
+                        <i class="fa-brands fa-linkedin fa-2x w-100 h-100"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-12 col-lg-6 m-3 m-3 p-3 rounded bg-dark text-white custom-shadow">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputName" class="form-label bg-dark text-uppercase">Your name</label>
+                <input type="text" class="form-control custom-shadow border-dark" id="inputName">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPhone" class="form-label bg-dark text-uppercase">Phone number</label>
+                <input type="tel" class="form-control custom-shadow border-dark" id="inputPhone">
+              </div>
+              <div class="col-12">
+                <label for="inputEmail" class="form-label bg-dark text-uppercase">email</label>
+                <input type="email" class="form-control custom-shadow border-dark" id="inputEmail">
+              </div>
+              <div class="col-12">
+                <label for="inputSubject" class="form-label bg-dark text-uppercase">Subject</label>
+                <input type="text" class="form-control custom-shadow border-dark" id="inputSubject">
+              </div>
+              <div class="col-12">
+                <label for="inputMessage" class="form-label bg-dark">You Message</label>
+                <textarea class="form-control custom-shadow border-dark" id="inputMessage" rows="11"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="col-12 btn btn-dark text-uppercase custom-shadow" style="color: #F31A59;"
+                  id="inputBtn">Send
+                  message</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="row my-5 text-center">
+      <footer>
+        <img src="./assets/img/logo/logo-dark-custom.png" alt="">
+        <div class="my-3 text-uppercase" style="color: lightblue; font-size: large;">inbio</div>
+        <div class="my-3" style="color: antiquewhite;">© 2022. All rights reserved by Rainbow-Themes.</div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="./assets/js/resume-button-selector.js"></script>
+  <!--Boostrap-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

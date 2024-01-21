@@ -1,0 +1,259 @@
+@import url(colors.css);
+/* Importamos los las variables de colores */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+/*importamos fonts*/
+/*MONTSERRAT*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Go Top Button*/
+@import url(go_top_button.css);
+
+/* {
+  border: 2px solid red;
+  /* para testeo * /
+}*/
+
+/* {
+  box-sizing: content-box;
+}*/
+
+* {
+  margin: 0%;
+  padding: 0%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background-light);
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: var(--color-background-navbar);
+  backdrop-filter: blur(5px);
+}
+
+.navbar-item,
+f-montserrat {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.c-primary {
+  color: #F31A59;
+  font-weight: bolder;
+}
+
+.navbar-item button {}
+
+.navbar-item button a {
+  color: var(--color-primary);
+}
+
+.navbar-toggler i {
+  color: var(--color-primary);
+}
+
+.navbar-toggler:checked {
+  border: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.offcanvas .offcanvas-body li {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.sobremi {
+  width: 100%;
+  height: 100vh;
+  margin: 0%;
+}
+
+.sobremi h6 {
+  color: darkgray;
+}
+
+.avatar-copntenedor {
+  padding-top: 1%;
+  background-color: red;
+  background-size: contain;
+  height: 100%;
+}
+
+.avatar {
+  z-index: 1;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid black;
+}
+
+.cards {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+.cards:hover {
+  background-color: var(--color-tertiary);
+}
+
+.cards i {
+  color: var(--color-primary);
+  margin-top: 15%;
+  margin-bottom: 10%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.cards:hover i {
+  margin-top: 5%;
+}
+
+.cards:hover * {
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  -webkit-transform: translateY();
+}
+
+.card span {
+  color: var(--color-primary);
+  display: none;
+}
+
+.card:hover span {
+  display: block;
+}
+
+
+.boton-selector input {
+  visibility: hidden;
+}
+
+.boton-selector:hover,
+.accordion-item:hover button {
+  color: #F31A59;
+}
+
+.accordion-item button {
+  color: white;
+}
+
+.boton-selector.active {
+  color: #F31A59;
+}
+
+/*TIMELINES */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline:before {
+  content: ' ';
+  background: rgb(132, 122, 108)
+    /*#d4d9df*/
+  ;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline>li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul.timeline>li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid rgb(132, 122, 108)
+    /*#22c0e8*/
+  ;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+#tlfnumber,
+#email {
+  color: lightblue;
+}
+
+#tlfnumber:hover,
+#email:hover {
+  color: #F31A59;
+  text-decoration: underline;
+}
+
+#inputName,
+#inputPhone,
+#inputEmail,
+#inputSubject,
+#inputMessage,
+#inputBtn {
+  background-color: rgba(0, 0, 0, 0.288);
+}
+
+#inputName:focus,
+#inputPhone:focus,
+#inputEmail:focus,
+#inputSubject:focus,
+#inputMessage:focus {
+  border-color: rgba(0, 0, 0, 0);
+}
+
+#inputMessage:hover,
+#inputMessage:focus {
+  border-color: #F31A59;
+}
+
+/* MEDIA QUERRIES */
+
+/* SM */
+@media (min-width: 576px) {
+  .bg-image {
+    width: 444px;
+    height: 573px;
+  }
+}
+
+/* MD */
+@media (min-width: 768px) {}
+
+/* LG */
+@media (min-width: 992px) {}
+
+/* XL */
+@media (min-width: 1200px) {}

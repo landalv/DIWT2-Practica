@@ -1,0 +1,17 @@
+:root {
+    /*PALETA DE COLORES*/
+    --color-primary: rgb(255, 26, 96);
+    --color-primary-oscuro: rgba(0, 0, 0, 0.25);
+    --color-secondary: rgb(153, 153, 153);
+    --color-tertiary: rgb(0, 0, 0);
+    --color-spacebar: rgb(109, 109, 109);
+    --color-background: rgba(50, 50, 50, .7);
+    --color-background-light: rgba(245, 245, 245, .1);
+    --color-background-image: rgba(245, 245, 245, .1);
+    --color-background-dark: rgba(50, 50, 50, .9);
+    --color-background-navbar: rgba(33, 37, 41, 0.826);
+    --color-bg-card: #404040a9;
+    /*FONDO DE PANTALLA CON EFECTO OSCURECIDO*/
+    --body-background: url(../img/producto/bg-nreal.jpg);
+    --presentación-background: url(../img/1.png);
+}
